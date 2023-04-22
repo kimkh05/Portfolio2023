@@ -4,19 +4,19 @@ import styled from '@emotion/styled';
 import UpperList from '@/components/upper';
 import { ReactNode } from 'react';
 import { StatusType } from '@/types/upper';
+import { PageList } from '@/utils/constants/pagelist';
 
 interface PropsType {
   children: ReactNode;
   status: StatusType;
-  list: any[];
 }
 
-const Frame = ({ children, status, list }: PropsType) => {
+const Frame = ({ children, status }: PropsType) => {
   return (
     <_Wrapper>
       <Header />
       <_Nav>
-        <UpperList status={status} list={list} />
+        <UpperList status={status} list={PageList} />
         <Background>{children}</Background>
       </_Nav>
     </_Wrapper>
