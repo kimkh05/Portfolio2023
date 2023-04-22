@@ -27,7 +27,7 @@ export const SkillList: SkillType[] = [
     id: 3,
     skillName: 'TypeScript',
     skillImage: TypescriptIcon,
-    skillDescription: '타입스크립트의 사용 이유와 장점을 통해 코드를 작성합니다.',
+    skillDescription: '타입스크립트의 사용 이유를 알고 타입스크립트의 장점을 통해 코드를 작성합니다.',
   },
   {
     id: 4,
