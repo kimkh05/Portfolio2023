@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import IconBlock from '../iconBlock';
+import IconBlock from './IconBlock';
 import { InformationListType } from '@/types/information';
 import { useRef } from 'react';
 
