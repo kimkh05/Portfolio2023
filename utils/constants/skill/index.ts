@@ -57,6 +57,6 @@ export const SkillList: SkillType[] = [
     id: 8,
     skillName: 'Github',
     skillImage: Github,
-    skillDescription: '깃허브를 통해 협업을 진행하며 CI/C 경험과 Git-Flow를 경험해보았습니다.',
+    skillDescription: '깃허브를 통해 협업을 진행하며 CI/CD 경험과 Git-Flow를 경험해보았습니다.',
   },
 ];
