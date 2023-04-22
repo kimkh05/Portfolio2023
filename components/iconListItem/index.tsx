@@ -13,8 +13,8 @@ const IconListItem = (props: InformationListType) => {
     try {
       await navigator.clipboard.writeText(copiedData);
       alert('클립보드에 복사되었습니다.');
-    } catch (err) {
-      alert('클립보드 복사에 실패했습니다.');
+    } catch (err: unknown) {
+      console.error(err);
     }
   };
 
