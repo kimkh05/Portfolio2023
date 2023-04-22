@@ -13,7 +13,9 @@ export default Background;
 
 const _Wrapper = styled.section`
   width: 100%;
+  min-height: 100%;
   background-color: ${({ theme }) => theme.color.background};
+  border-radius: 1.25rem;
   padding: 3.75rem;
   display: flex;
   flex-direction: column;
