@@ -39,6 +39,7 @@ const _Wrapper = styled.header`
 const _ProfileImage = styled(Image)`
   width: 300px;
   height: 300px;
+  border-radius: 30px;
 `;
 
 const _Name = styled.span`
