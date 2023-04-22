@@ -3,7 +3,7 @@ import { ProfileImage } from '@/assets';
 import Image from 'next/image';
 import { InformationList } from '@/utils/constants/information';
 import { InformationListType } from '@/types/information';
-import IconListItem from '@/components/iconListItem';
+import IconListItem from '@/components/iconItem/IconListItem';
 
 const Header = () => {
   return (
@@ -16,14 +16,7 @@ const Header = () => {
       </_InformationWrapper>
       <_InformationListWrapper>
         {InformationList.map((element: InformationListType) => (
-          <IconListItem
-            key={element.id}
-            title={element.title}
-            contents={element.contents}
-            imageUrl={element.imageUrl}
-            link={element.link}
-            id={element.id}
-          />
+          <IconListItem key={element.id} {...element} />
         ))}
       </_InformationListWrapper>
     </_Wrapper>
@@ -40,6 +33,7 @@ const _Wrapper = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 90px 40px;
+  background-color: ${({ theme }) => theme.color.white};
 `;
 
 const _ProfileImage = styled(Image)`
