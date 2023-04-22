@@ -8,7 +8,7 @@ const IconListItem = (props: InformationListType) => {
   const ref = useRef<HTMLAnchorElement>(null);
 
   const onClick = async () => {
-    const copiedData = ref.current?.innerHTML as string;
+    const copiedData: string = ref.current?.innerHTML as string;
     if (title === 'github') return;
     try {
       await navigator.clipboard.writeText(copiedData);
