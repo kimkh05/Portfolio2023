@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import IconBlock from './IconBlock';
 import { InformationListType } from '@/types/information';
 import { useRef } from 'react';
+import { customToast } from '@/utils/toast';
 
 const IconListItem = (props: InformationListType) => {
   const { title, contents, imageUrl, link } = props;
@@ -12,7 +13,7 @@ const IconListItem = (props: InformationListType) => {
     if (title === 'github') return;
     try {
       await navigator.clipboard.writeText(copiedData);
-      alert('클립보드에 복사되었습니다.');
+      customToast('클립보드에 복사되었습니다.', 'success');
     } catch (err: unknown) {
       console.error(err);
     }
