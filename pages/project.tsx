@@ -5,7 +5,7 @@ import { PageList } from '@/utils/constants/pagelist';
 const Project = () => {
   return (
     <Frame status="참여한 프로젝트">
-      <span>Test</span>
+      <span>작성중..</span>
     </Frame>
   );
 };
