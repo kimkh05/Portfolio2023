@@ -12,7 +12,7 @@ const Header = () => {
       <_InformationWrapper>
         <_Name>김경호</_Name>
         <_FieldText>Frontend Developer</_FieldText>
-        <_IntroduceText>To iterate is human, to recurse divine.</_IntroduceText>
+        <_IntroduceText>소프트웨어개발과</_IntroduceText>
       </_InformationWrapper>
       <_InformationListWrapper>
         {InformationList.map((element: InformationListType) => (
