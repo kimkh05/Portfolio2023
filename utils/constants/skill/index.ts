@@ -8,6 +8,7 @@ import {
   NextjsIcon,
   ReduxIcon,
   Github,
+  PythonIcon,
 } from '@/assets';
 
 export const SkillList: SkillType[] = [
@@ -55,6 +56,12 @@ export const SkillList: SkillType[] = [
   },
   {
     id: 8,
+    skillName: 'Python',
+    skillImage: PythonIcon,
+    skillDescription: "기초적인 인공지능과 데이터 크롤링을 경험해보았습니다."
+  },
+  {
+    id: 9,
     skillName: 'Github',
     skillImage: Github,
     skillDescription: '깃허브를 통해 협업을 진행하며 CI/CD 경험과 Git-Flow를 경험해보았습니다.',
