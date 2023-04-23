@@ -24,3 +24,13 @@ export { default as UPLogo } from './image/activity/dsm-up.png';
 //image/contest
 export { default as AppJamPoster } from './image/contest/appjam.svg';
 export { default as KosaMidasPoster } from './image/contest/kosa-midas.svg';
+
+//image/project
+export { default as Maradi } from './image/project/maradi.svg';
+export { default as EH } from './image/project/EH.svg';
+export { default as MM } from './image/project/mm.svg';
+export { default as MOD } from './image/project/MOD.png';
+export { default as Danmuzi } from './image/project/danmuzi.svg';
+export { default as DailyBoram } from './image/project/daily-boram.png';
+export { default as Sivang } from './image/project/sivang.svg';
+export { default as Gigwanzi } from './image/project/gigwanzi.svg';
