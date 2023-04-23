@@ -28,4 +28,7 @@ const _Text = styled(Link)<{ status: StatusType; value: string }>`
   cursor: pointer;
   text-decoration: none;
   margin-right: 3.125rem;
+  :hover{
+    color: ${({theme}) => theme.color.black};
+  }
 `;
