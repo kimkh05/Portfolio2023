@@ -2,7 +2,10 @@ import Frame from '@/components/frame';
 import styled from '@emotion/styled';
 import { DSMActivity } from '@/utils/constants/activity';
 import { DSMActivityType } from '@/types/activity';
+import { OtherContest } from '@/utils/constants/contest';
 import SchoolItem from '@/components/activity/SchoolItem';
+import { ContestType } from '@/types/contest';
+import ContestItem from '@/components/contest/Item';
 
 const Home = () => {
   return (
@@ -13,6 +16,10 @@ const Home = () => {
           <SchoolItem key={element.id} {...element} />
         ))}
       </_Wrapper>
+      <_Title>참여한 외부활동</_Title>
+      {OtherContest.map((element: ContestType) => (
+        <ContestItem key={element.id} {...element} />
+      ))}
     </Frame>
   );
 };
@@ -21,7 +28,6 @@ export default Home;
 
 const _Title = styled.span`
   ${({ theme }) => theme.font.title2};
-  margin-bottom: 50px;
 `;
 
 const _Wrapper = styled.div`
@@ -29,4 +35,5 @@ const _Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 50px 0;
 `;
