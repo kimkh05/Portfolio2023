@@ -15,6 +15,7 @@ export { default as NextjsIcon } from './image/language/nextjs.png';
 export { default as Github } from './image/language/github.svg';
 export { default as ReduxIcon } from './image/language/redux.png';
 export { default as NestjsIcon } from './image/language/nestjs.svg';
+export { default as PythonIcon } from './image/language/python.png';
 
 //image/activity
 export { default as CSStudyLogo } from './image/activity/cs_study.png';
