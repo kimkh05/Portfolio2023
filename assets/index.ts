@@ -19,3 +19,7 @@ export { default as NestjsIcon } from './image/language/nestjs.svg';
 //image/activity
 export { default as CSStudyLogo } from './image/activity/cs_study.png';
 export { default as UPLogo } from './image/activity/dsm-up.png';
+
+//image/contest
+export { default as AppJamPoster } from './image/contest/appjam.svg';
+export { default as KosaMidasPoster } from './image/contest/kosa-midas.svg';
